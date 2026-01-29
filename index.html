@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Cep Faisal Koswara.P</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-link:hover {
+            color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.1), transparent),
+                        radial-gradient(circle at bottom left, rgba(124, 58, 237, 0.1), transparent);
+        }
+
+        /* Foto Profile Styles */
+        .profile-image-container {
+            width: 220px;
+            height: 220px;
+            margin: 0 auto 2rem;
+            position: relative;
+        }
+
+        .profile-image-wrapper {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid white;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            position: relative;
+            z-index: 2;
+        }
+
+        .profile-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 25%; /* Memastikan wajah tetap di tengah setelah di zoom */
+            transform: scale(2.2); /* Efek Zoom yang disesuaikan untuk foto ini */
+        }
+
+        .profile-accent {
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            border-radius: 50%;
+            z-index: 1;
+            animation: pulse-border 3s infinite;
+        }
+
+        @keyframes pulse-border {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 0.4; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-bold text-xl tracking-tighter gradient-text">CFK.</span>
+            <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wider">
+                <a href="#home" class="nav-link transition-all">Beranda</a>
+                <a href="#about" class="nav-link transition-all">Tentang</a>
+                <a href="#education" class="nav-link transition-all">Pendidikan</a>
+                <a href="#experience" class="nav-link transition-all">Pengalaman</a>
+                <a href="#contact" class="nav-link transition-all">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center hero-gradient pt-20">
+        <div class="max-w-4xl text-center px-6">
+            <!-- Profile Photo Area -->
+            <div class="profile-image-container">
+                <div class="profile-accent"></div>
+                <div class="profile-image-wrapper">
+                    <!-- FOTO ANDA DENGAN LINK TERBARU -->
+                    <img src="WhatsApp Image 2026-01-29 at 18.51.11.jpeg" alt="Foto Cep Faisal Koswara.P">
+                </div>
+            </div>
+
+            <div class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-blue-600 bg-blue-50 rounded-full">
+                Halo, Selamat Datang
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+                CEP FAISAL <span class="gradient-text">KOSWARA.P</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Seorang komunikator ulung, pemimpin masa depan, dan pemecah masalah yang antusias dalam bidang sosial.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#contact" class="px-8 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">
+                    Hubungi Saya
+                </a>
+                <a href="#about" class="px-8 py-3 bg-white text-slate-900 border border-slate-200 rounded-xl font-semibold hover:bg-slate-50 transition-all">
+                    Pelajari Lebih Lanjut
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Details -->
+    <section id="about" class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="glass-card p-8 rounded-3xl shadow-xl shadow-slate-200/50">
+                <h2 class="text-3xl font-bold mb-6">Tentang Diri</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-600">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 uppercase font-bold">Lahir</p>
+                            <p class="font-semibold text-slate-800">18 Desember 2007</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center text-purple-600">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 uppercase font-bold">Alamat</p>
+                            <p class="font-semibold text-slate-800">Bojongsoang, Bandung</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center text-green-600">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 uppercase font-bold">Hobi</p>
+                            <p class="font-semibold text-slate-800">Menulis, Bermain Bola, Membaca</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <h3 class="font-bold mb-4">Bahasa</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-100 rounded-lg text-sm font-medium">Indonesia</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-lg text-sm font-medium">Inggris</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-lg text-sm font-medium">Itali</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-lg text-sm font-medium">Spanyol</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Keahlian & Kompetensi</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm hover:border-blue-200 transition-all">
+                        <h4 class="font-bold text-blue-600 mb-2">Mahir Bidang Sosial</h4>
+                        <p class="text-sm text-slate-600">Mampu beradaptasi dan berinteraksi dengan berbagai lapisan masyarakat secara efektif.</p>
+                    </div>
+                    <div class="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm hover:border-blue-200 transition-all">
+                        <h4 class="font-bold text-blue-600 mb-2">Komunikasi</h4>
+                        <p class="text-sm text-slate-600">Keterampilan berbicara di depan umum dan negosiasi yang sangat baik.</p>
+                    </div>
+                    <div class="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm hover:border-blue-200 transition-all">
+                        <h4 class="font-bold text-blue-600 mb-2">Kepemimpinan</h4>
+                        <p class="text-sm text-slate-600">Pengalaman mengelola tim dan organisasi dengan visi yang jelas.</p>
+                    </div>
+                    <div class="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm hover:border-blue-200 transition-all">
+                        <h4 class="font-bold text-blue-600 mb-2">Pemecah Masalah</h4>
+                        <p class="text-sm text-slate-600">Berpikir kritis dalam menemukan solusi di situasi sulit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Timeline -->
+    <section id="education" class="bg-slate-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Riwayat Pendidikan</h2>
+            <div class="relative border-l-2 border-blue-200 ml-4">
+                <div class="mb-10 ml-8">
+                    <span class="absolute -left-[11px] w-5 h-5 bg-blue-600 rounded-full border-4 border-white"></span>
+                    <h3 class="text-xl font-bold">SMA Karya Pembangunan</h3>
+                    <p class="text-blue-600 font-semibold mb-2">2023 - 2026</p>
+                    <p class="text-slate-600 text-sm">Sedang menempuh pendidikan menengah atas.</p>
+                </div>
+                <div class="mb-10 ml-8">
+                    <span class="absolute -left-[11px] w-5 h-5 bg-slate-400 rounded-full border-4 border-white"></span>
+                    <h3 class="text-xl font-bold">SMP BPPI</h3>
+                    <p class="text-blue-600 font-semibold mb-2">2020 - 2023</p>
+                    <p class="text-slate-600 text-sm">Lulus dengan catatan prestasi yang baik.</p>
+                </div>
+                <div class="ml-8">
+                    <span class="absolute -left-[11px] w-5 h-5 bg-slate-400 rounded-full border-4 border-white"></span>
+                    <h3 class="text-xl font-bold">SDN Cijagra</h3>
+                    <p class="text-blue-600 font-semibold mb-2">2014 - 2020</p>
+                    <p class="text-slate-600 text-sm">Pendidikan dasar dasar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Awards -->
+    <section id="experience" class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center">Pengalaman & Prestasi</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold flex items-center gap-2">
+                    <i class="fas fa-users text-blue-600"></i> Organisasi
+                </h3>
+                <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                    <h4 class="font-bold">Wakil Ketua OSIS</h4>
+                    <p class="text-sm text-slate-500 mb-2">SMA Karya Pembangunan</p>
+                    <p class="text-slate-600">Bertanggung jawab membantu memimpin organisasi siswa dan menyukseskan berbagai program sekolah.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-blue-50 rounded-xl text-center">
+                        <i class="fas fa-trophy text-blue-600 text-xl mb-2"></i>
+                        <p class="text-xs font-bold uppercase text-slate-500">Juara 1</p>
+                        <p class="text-sm font-bold">Olimpiade B. Itali</p>
+                    </div>
+                    <div class="p-4 bg-blue-50 rounded-xl text-center">
+                        <i class="fas fa-trophy text-blue-600 text-xl mb-2"></i>
+                        <p class="text-xs font-bold uppercase text-slate-500">Juara 1</p>
+                        <p class="text-sm font-bold">Minisoccer</p>
+                    </div>
+                    <div class="p-4 bg-blue-50 rounded-xl text-center">
+                        <i class="fas fa-trophy text-blue-600 text-xl mb-2"></i>
+                        <p class="text-xs font-bold uppercase text-slate-500">Juara 1</p>
+                        <p class="text-sm font-bold">Olimpiade B. Inggris</p>
+                    </div>
+                    <div class="p-4 bg-purple-50 rounded-xl text-center">
+                        <i class="fas fa-certificate text-purple-600 text-xl mb-2"></i>
+                        <p class="text-xs font-bold uppercase text-slate-500">Prestasi</p>
+                        <p class="text-sm font-bold">Juara 1 Yapping</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold flex items-center gap-2">
+                    <i class="fas fa-award text-blue-600"></i> Sertifikat & Pencapaian Lain
+                </h3>
+                <div class="p-6 bg-slate-900 text-white rounded-2xl shadow-xl">
+                    <p class="text-blue-400 text-xs font-bold uppercase mb-1">Eksklusif</p>
+                    <h4 class="text-lg font-bold mb-4">Prediksi Kemenangan MU</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed italic">
+                        "Sertifikat khusus atas kemampuan menebak kemenangan Manchester United dengan akurasi tinggi."
+                    </p>
+                </div>
+                <div class="p-6 bg-white border border-slate-100 rounded-2xl">
+                    <h4 class="font-bold mb-2">Penghargaan Komunikasi</h4>
+                    <p class="text-sm text-slate-600 italic">Pemenang kategori nomor 1 'Yapping' - membuktikan kemampuan retorika dan berbicara yang luar biasa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-blue-600 text-white">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h2 class="text-4xl font-bold mb-8">Mari Terhubung!</h2>
+            <p class="text-blue-100 mb-12 text-lg">Tertarik untuk bekerja sama atau sekadar menyapa? Saya siap membantu.</p>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="p-6 bg-blue-700/50 rounded-2xl backdrop-blur-sm">
+                    <i class="fas fa-phone mb-4 text-2xl"></i>
+                    <p class="text-sm text-blue-200">Telepon</p>
+                    <p class="font-bold">085189066113</p>
+                </div>
+                <div class="p-6 bg-blue-700/50 rounded-2xl backdrop-blur-sm">
+                    <i class="fab fa-instagram mb-4 text-2xl"></i>
+                    <p class="text-sm text-blue-200">Instagram</p>
+                    <p class="font-bold">@cepfaisalkoswara</p>
+                </div>
+                <div class="p-6 bg-blue-700/50 rounded-2xl backdrop-blur-sm">
+                    <i class="fas fa-envelope mb-4 text-2xl"></i>
+                    <p class="text-sm text-blue-200">Email</p>
+                    <p class="font-bold">faisal@example.com</p>
+                </div>
+            </div>
+
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all text-xl">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all text-xl">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all text-xl">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-slate-500 text-sm border-t border-slate-200">
+        <p>© 2024 Cep Faisal Koswara.P - Dibuat dengan semangat & dedikasi.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
